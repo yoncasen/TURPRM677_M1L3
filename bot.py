@@ -24,7 +24,7 @@ async def ban(ctx, member: discord.Member = None):
             await ctx.send("Eşit veya daha yüksek rütbeli bir kullanıcıyı banlamak mümkün değildir!")
         else:
             await ctx.guild.ban(member)
-            await ctx.send(f"Kullanızı {member.name} banlandı")
+            await ctx.send(f"Kullanıcı {member.name} banlandı")
     else:
         await ctx.send("Bu komut banlamak istediğiniz kullanıcıyı işaret etmelidir. Örneğin: `!ban @user`")
 
